@@ -23,7 +23,7 @@ configurations {
 
 dependencies {
     ecj 'org.eclipse.jdt:ecj:3.26.0'
-    lombok 'org.projectlombok:lombok:1.18.22'
+    lombok 'org.projectlombok:lombok:1.18.24'
 }
 
 java {
@@ -51,7 +51,7 @@ compileJava {
 
 dependencies {
     compileOnly('org.projectlombok:lombok:1.18.22')
-    annotationProcessor('org.projectlombok:lombok:1.18.20')
+    annotationProcessor('org.projectlombok:lombok:1.18.24')
     api ("org.seleniumhq.selenium:selenium-java") {
         version {
             strictly "${project.property('selenium.version')}"
